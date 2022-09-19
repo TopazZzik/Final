@@ -2,8 +2,18 @@
 // длина которых меньше либо равна 3 символа.
 
 string [] array = {"let", "me", "pass", "thistask"};
-SecondArray(array);
 PrintArray(array);
+SecondArray(array);
+
+
+void PrintArray(string[] Array)
+{
+    for(int i = 0; i<array.Length; i++)
+    {
+        Console.WriteLine(Array[i]);
+    }
+    Console.WriteLine();
+}
 
 void SecondArray (string [] array)
 {
@@ -15,15 +25,6 @@ void SecondArray (string [] array)
             secondarr[i]=array[i];
             Console.WriteLine(secondarr[i]);
         }
-    }
-    Console.WriteLine();
-}
-
-void PrintArray(string[] Array)
-{
-    for(int i = 0; i<array.Length; i++)
-    {
-        Console.WriteLine(Array[i]);
     }
     Console.WriteLine();
 }
